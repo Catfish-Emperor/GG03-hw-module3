@@ -5,7 +5,12 @@ export function getAllPlaylists() {
 }
 
 export function addSong(title, artists, url) {
-    const newSong = { title, artists, url, count: 0 };
+    const newSong = { 
+        title: title, 
+        artists: artists, 
+        url: url, 
+        count: 0 
+    };
     playlists.push(newSong);
     return newSong;
 }
